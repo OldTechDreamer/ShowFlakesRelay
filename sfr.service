@@ -1,0 +1,11 @@
+[Unit]
+Description=Show Flakes Relay - GPIO PWM Driver
+After=network.target
+
+[Service]
+Type=simple
+Restart=on-failure
+ExecStart=/usr/local/bin/show_flakes_relay
+
+[Install]
+WantedBy=multi-user.target
